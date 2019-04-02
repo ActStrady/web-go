@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>css复习</title>
+		<style>
+			/*全局*/
+			* {
+				color: red;
+			}
+			
+			/*元素*/
+			div {
+				color: magenta;
+			}
+			
+			/*类*/
+			.one {
+				color: yellow;
+			}
+			
+			/*id*/
+			#one {
+				color: yellowgreen;
+			}
+			
+			/*伪类*/
+			a:hover {
+				color: darkorchid;
+			}
+			
+			/*后代*/
+			.one a {
+				color: burlywood;
+			}
+			
+			/*组合*/
+			.one .a {
+				color: black;
+			}
+			
+			/*分组*/
+			.one,
+			.a {
+				color: springgreen;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="one" id="one">
+			one text
+			<a class="a">go</a>
+		</div>
+	</body>
+
+</html>
