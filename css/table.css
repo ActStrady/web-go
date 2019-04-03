@@ -1,0 +1,18 @@
+.table {
+	width: 200px;
+	height: 200px;
+	/*是否合并单元格边 和cellspacing="0"效果类似*/
+	border-collapse: collapse;
+	/*设置表格布局 默认auto会根据内容撑开 fixed表示固定*/
+	table-layout: auto;
+	/*设置单元格和表格边的距离 类似与cellpadding="" 后者是内容与单元格的距离*/
+	border-spacing: 0px;
+	/*设置caption位置 上和下*/
+	caption-side: bottom;
+	/*空行单元格是否显示边框*/
+	empty-cells: hide;
+}
+.table th,
+td {
+	border: 1px solid #000000;
+}

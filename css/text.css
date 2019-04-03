@@ -1,0 +1,31 @@
+.text p {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #00FF7F ;
+	/*首行缩进 可以是数值 0 和百分比*/
+	text-indent: 0;
+	/*文本对齐方式*/
+	text-align: center;
+	/*处理空白*/
+	white-space: normal;
+	/*行高 一般24-25常用*/
+	line-height: 24px;
+	/*文本垂直对齐方式 对块级元素不起作用*/
+	vertical-align: middle;
+	/*文字间距 英文单词*/
+	/*word-spacing: 20px;*/
+	/*字母间距*/
+	/*letter-spacing: 20px;*/
+	/*文本效果*/
+	text-decoration: underline;
+	/*字体名称*/
+	font-family: "微软雅黑";
+	/*字体大小 一般常用12 14*/
+	font-size: 14px;
+	/*字体粗细*/
+	font-weight: bold;
+	/*颜色*/
+	color: #00FF7F;
+	/*溢出处理方式*/
+	/*overflow: auto;*/	
+}

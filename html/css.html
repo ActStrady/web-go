@@ -4,48 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>css复习</title>
-		<style>
-			/*全局*/
-			* {
-				color: red;
-			}
-			
-			/*元素*/
-			div {
-				color: magenta;
-			}
-			
-			/*类*/
-			.one {
-				color: yellow;
-			}
-			
-			/*id*/
-			#one {
-				color: yellowgreen;
-			}
-			
-			/*伪类*/
-			a:hover {
-				color: darkorchid;
-			}
-			
-			/*后代*/
-			.one a {
-				color: burlywood;
-			}
-			
-			/*组合*/
-			.one .a {
-				color: black;
-			}
-			
-			/*分组*/
-			.one,
-			.a {
-				color: springgreen;
-			}
-		</style>
+		<link rel="stylesheet" href="../css/prionity.css" type="text/css" />
+		<link rel="stylesheet" href="../css/text.css" type="text/css" />
+		<link rel="stylesheet" href="../css/block.css" type="text/css" />
+		<link rel="stylesheet" href="../css/table.css" type="text/css" />
 	</head>
 
 	<body>
@@ -53,6 +15,54 @@
 			one text
 			<a class="a">go</a>
 		</div>
+		<div class="text">
+			<p> 文本各种属性功能，你说嘴巴嘟嘟，嘴巴毒毒毒毒。early but hhh kk</p>
+			<span>文本各种属性功能，文本各种属性功能，文本各种属性功能，文本各种属性功能</span>
+			<table class="table">
+				<!--表格的标题-->
+				<caption>不知道是什么表</caption>
+				<!--表头-->
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<!--表内容，不加的话浏览器会帮我们加上-->
+				<tbody>
+					<tr>
+						<td>bildsdsdssdsdsssssssssssssssssssssssssssssssssssssddfd giuk</td>
+						<td></td>
+						<td>男</td>
+					</tr>
+				</tbody>
+				<!--注脚-->
+				<tfoot></tfoot>
+			</table>
+		</div>
+		<div class="block">
+			首先这是个div 其次我开始浮动了
+		</div>
+		<div class="block">
+			首先这是个div
+		</div>
+		<div class="block">
+			首先这是个div
+		</div>
+		<div class="block">
+			首先这是个div
+		</div>
+		<div class="clear">
+			我不想浮动了
+		</div>
+		<div class="bg"></div>
+		<ul type="circle">
+			<li>你好</li>
+			<li>你好吗</li>
+			<li>你很好吗</li>
+		</ul>
+		<div class="bum">结束</div>
 	</body>
 
 </html>

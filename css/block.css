@@ -1,0 +1,38 @@
+.block {
+	width: 200px;
+	height: 200px;
+	border-style: double;
+	border-width:2px;
+	border-color: #9ACD32;
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.bg {
+	width: 300px;
+	height: 300px;
+	border-style: double;
+	border-width:2px;
+	border-color: #9ACD32;
+	background-image: url(../img/btn2.png);
+	/*平铺模式*/
+	background-repeat: no-repeat;
+	/*位置*/
+	background-position: center bottom;
+}
+ul {
+	/*列表样式支持图片*/
+	list-style: circle;
+	/*定位 relative 相对定位*/
+	position: relative;
+}
+.bum {
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	color: white;
+}

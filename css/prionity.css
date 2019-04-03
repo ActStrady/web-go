@@ -1,0 +1,55 @@
+/*全局*/
+
+* {
+	margin: 0;
+}
+
+
+/*元素*/
+
+div {
+/*	color: magenta;*/
+}
+
+
+/*类*/
+
+.one {
+	color: yellow;
+}
+
+
+/*id*/
+
+#one {
+	color: yellowgreen;
+}
+
+
+/*伪类*/
+
+a:hover {
+	color: darkorchid;
+}
+
+
+/*后代*/
+
+.one a {
+	color: burlywood;
+}
+
+
+/*组合*/
+
+.one .a {
+	color: black;
+}
+
+
+/*分组*/
+
+.one,
+.a {
+	color: springgreen;
+}
