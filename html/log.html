@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>log日志操作</title>
+		<link rel="stylesheet" type="text/css" href="../css/log.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<span>系统日志</span>
+				<ul>
+					<li><img src="../img/home16px.png" /></li>
+					<li>首页</li>
+					<li><img src="../img/right.png" /></li>
+					<li>日志管理</li>
+					<li><img src="../img/right.png" /></li>
+					<li>系统日志</li>
+				</ul>
+			</div>
+			<div class="blank"></div>
+			<div class="search">
+				<div class="box">
+					<label>类型：</label>
+					<select>
+						<option>增加</option>
+						<option>删除</option>
+						<option>修改</option>
+					</select>
+					<label>日期：</label>
+					<span>从</span>
+					<input type="text" />
+					<span>至</span>
+					<input type="text" />
+					<button>搜索	</button>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<th>日志操作</th>
+							<th>事件类型</th>
+							<th>发生时间</th>
+							<th>修复时间</th>
+							<th>处理人</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="add">
+							<td>增加操作</td>
+							<td>新增</td>
+							<td>2019-03-01</td>
+							<td>2019-04-01</td>
+							<td>张三</td>
+						</tr>
+						<tr class="upd">
+							<td>更新操作</td>
+							<td>更新</td>
+							<td>2019-03-01</td>
+							<td>2019-04-02</td>
+							<td>王五</td>
+						</tr>
+						<tr class="del">
+							<td>删除操作</td>
+							<td>删除</td>
+							<td>2019-03-01</td>
+							<td>2019-04-02</td>
+							<td>李四</td>
+						</tr>
+						<tr class="add">
+							<td>增加操作</td>
+							<td>新增</td>
+							<td>2019-03-01</td>
+							<td>2019-04-01</td>
+							<td>张四</td>
+						</tr>
+						<tr class="upd">
+							<td>更新操作</td>
+							<td>更新</td>
+							<td>2019-03-01</td>
+							<td>2019-04-02</td>
+							<td>王八</td>
+						</tr>
+						<tr class="del">
+							<td>删除操作</td>
+							<td>删除</td>
+							<td>2019-03-01</td>
+							<td>2019-04-02</td>
+							<td>李六</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="blank"></div>
+			<div class="operate">
+				<div class="handle">
+					<button class="addbut">新增</button>
+					<button>修改</button>
+					<button>删除</button>
+					<button>保存</button>
+				</div>
+				<div class="paging">
+					<ul>
+						<li class="pre">
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li class="next">
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
