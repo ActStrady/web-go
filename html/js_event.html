@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>js事件</title>
+		<style type="text/css">
+			* {
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			
+			.event {
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+			}
+		</style>
+		<script type="text/javascript" async>
+			function fun() {
+				document.getElementById("event").style.backgroundColor = "#00BFFF";
+				console.log("btnevent");
+			}
+
+			function fund() {
+				document.getElementById("event").style.backgroundColor = "aqua";
+				console.log("docu");
+			}
+
+			function change() {
+				document.getElementById("event").style.backgroundColor = "#FFFF00";
+				console.log("onclick");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="event" class="event">
+			<button id="btn" class="btn" onclick="change()">变色</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		document.getElementById("btn").addEventListener("click", fun, true);
+		document.addEventListener("click", fund, true);
+		document.getElementById("btn").onclick = function() {
+			document.getElementById("event").style.backgroundColor = "#DEB887";
+			console.log("onclickevent");
+		}
+	</script>
+
+</html>
