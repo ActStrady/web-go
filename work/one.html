@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>作业一</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.one {
+				width: 20%;
+			}
+			
+			.one th {
+				color: white;
+				background-color: #3F82C8;
+			}
+			
+			.one tr {
+				background-color: #ECF5FC;
+			}
+			
+			.one .no {
+				background-color: white;
+			}
+			
+			.block {
+				height: 40px;
+			}
+			
+			.title ul {
+				list-style-type: none;
+			}
+			
+			.title li {
+				padding: 1px;
+			}
+			
+			.title a {
+				color: white;
+				width: 10%;
+				display: inline-block;
+				background-color: #023265;
+			}
+			
+			.title a:hover {
+				background-color: #3F82C8;
+			}
+			
+			.title a:active {
+				background-color: black;
+			}
+			
+			.dis a {
+				display: block;
+			}
+			
+			.dis a:hover {
+				color: red;
+				text-transform: uppercase;
+			}
+			
+			.log {
+				width: 50px;
+				height: 45px;
+				background-image: url(../img/log.png);
+				background-position: -45px -82px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table class="one">
+			<tr>
+				<th>标题一</th>
+				<th>标题二</th>
+				<th>标题三</th>
+			</tr>
+			<tr>
+				<td>数据一</td>
+				<td>数据二</td>
+				<td>数据三</td>
+			</tr>
+			<tr>
+				<td>数据四</td>
+				<td>数据五</td>
+				<td>数据六</td>
+			</tr>
+			<tr>
+				<td>数据七</td>
+				<td>数据八</td>
+				<td>数据九</td>
+			</tr>
+			<tr>
+				<td>数据十</td>
+				<td>数据十一</td>
+				<td>数据十二</td>
+			</tr>
+		</table>
+		<div class="block"></div>
+		<table class="one">
+			<tr>
+				<th>标题一</th>
+				<th>标题二</th>
+				<th>标题三</th>
+			</tr>
+			<tr class="no">
+				<td>数据一</td>
+				<td>数据二</td>
+				<td>数据三</td>
+			</tr>
+			<tr>
+				<td>数据四</td>
+				<td>数据五</td>
+				<td>数据六</td>
+			</tr>
+			<tr class="no">
+				<td>数据七</td>
+				<td>数据八</td>
+				<td>数据九</td>
+			</tr>
+			<tr>
+				<td>数据十</td>
+				<td>数据十一</td>
+				<td>数据十二</td>
+			</tr>
+		</table>
+		<div class="block"></div>
+		<div class="title">
+			<ul>
+				<li>
+					<a class="tit">首页</a>
+				</li>
+				<li>
+					<a class="tit">相册</a>
+				</li>
+				<li>
+					<a class="tit">博客</a>
+				</li>
+				<li>
+					<a class="tit">我的朋友</a>
+				</li>
+				<li>
+					<a class="tit">个人简介</a>
+				</li>
+			</ul>
+		</div>
+		<div class="block"></div>
+		<div class="dis">
+			<h1>页面标题</h1>
+			<a href="http://www.baidu.com">链接到百度首页，welcome to baidu!</a>
+			<a href="http://www.google.com">链接到谷歌首页，welcome to google！</a>
+		</div>
+		<div class="spl">
+			<h3>原图</h3>
+			<img src="../img/log.png" />
+			<h3>切出一块</h3>
+			<div class="log"></div>
+		</div>
+	</body>
+
+</html>

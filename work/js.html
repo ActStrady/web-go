@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="check" id="check">
+		</div>
+	</body>
+	<script type="text/javascript">
+		var list = [{
+			'name': '选项1'
+		}, {
+			'name': '选项2'
+		}, {
+			'name': '选项3'
+		}, {
+			'name': '选项4'
+		}];
+		var check = document.getElementById("check");
+		for(var x of list) {
+			var input = document.createElement('input');
+			var span = document.createElement('span');
+			var br = document.createElement('br');
+			input.setAttribute('type', 'checkbox');
+			input.setAttribute('name', 'test');
+			var text = document.createTextNode(x.name);
+			span.appendChild(text);
+			check.appendChild(input);
+			check.appendChild(span);
+			check.appendChild(br);
+		}
+		
+	</script>
+
+</html>
