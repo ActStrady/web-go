@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div class="test" id="test">
+			<ul class="ul" id="ul">
+				<li><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+			</ul>
+			<button id="btn1">隐藏</button>
+			<button id="btn2">显示</button>
+			<button id="btn3">显示隐藏</button><br />
+			<button id="btnfade1">淡入隐藏</button>
+			<button id="btnfade2">淡出显示</button>
+			<button id="btnfade3">淡显示隐藏</button>
+			<button id="btnfade4">不透明度</button><br />
+			<button id="btnslide1">滑动隐藏</button>
+			<button id="btnslide2">滑动显示</button>
+			<button id="btnslide3">滑动显示隐藏</button><br />
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	// 元素选择器
+	console.log($('ul').html());
+	// 属性选择器
+	console.log($('[class="ul"]').get(0));
+	// css选择器
+	//	$('.test').css('background-color', '#007F0A');
+	// 动画基础
+	// 隐藏
+	$('#btn1').click(function() {
+		$('#ul').hide(3000);
+	});
+	$('#btn2').click(function() {
+		$('#ul').show(3000);
+	});
+	$('#btn3').click(function() {
+		$('#ul').toggle(2000);
+	});
+	$('#btnfade1').click(function() {
+		$('#ul').fadeOut(2000);
+	});
+	$('#btnfade2').click(function() {
+		$('#ul').fadeIn(2000);
+	});
+	$('#btnfade3').click(function() {
+		$('#ul').fadeToggle(2000);
+	});
+	$('#btnfade4').click(function() {
+		$('#ul').fadeTo(2000, 0.25);
+	});
+	$('#btnslide1').click(function() {
+		$('#ul').slideUp(2000);
+	});
+	$('#btnslide2').click(function() {
+		$('#ul').slideDown(2000);
+	});
+	$('#btnslide3').click(function() {
+		$('#ul').slideToggle(2000);
+	});
+</script>
