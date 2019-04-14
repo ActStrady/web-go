@@ -1,4 +1,5 @@
 ### Web学习与复习
+
 - html部分
   - 通用的几个属性
     1. title 设置元素的文本标题，在鼠标指向时会悬浮出标题
@@ -45,9 +46,13 @@
        实际效果其实就是增大一段文本中空白字符（空格）的宽度（整段汉字可能会没有效果，因为汉语段落一般都没有空格）
 
     7. 设置字母间距 取值：数值、normal  实际效果：在每个字母或汉字中间插入一段空白距离
+
     8. 设置文本效果 text-decoration 取值：none、underline、overline、line-through、blink
+
     9. 字体名称 font-family
+
     10. 字体大小 font-size 一般都是直接赋值的方式，常用12px、14px大小
+
     11. 设置字体粗细 font-weight 取值：normal、bold、bolder、lighter、数值，数值很少使用
 
   - 块级元素
@@ -68,4 +73,38 @@
     4. 设置caption位置 caption-side: bottom 上和下
     5. 空行单元格是否显示边框 empty-cells: hide
 
+- js 部分
 
+  1. 全局变量和局部变量，不使用var的都是全局变量，其他的和java一样
+  2. 定义数组， new Array();  和[];
+  3. js dom操作 createAttribute()创建属性节点  createElement()创建元素节点  createTextNode()创建文本节点
+  4. NaN 是字符串转换成 数值时 报错了，就是一个NaN； 任何一个数值和NaN进行运算结果 是一个NaN; NaN不和任何一个值相等，包括自己
+  5. window.onload 页面加载完成后 一般用于在head里写script时需要操作文档后面内容的时候使用
+  6. nextSibling; 下一个节点 nodeType 节点类型
+  7. 阻止默认事件的发生 event.preventDefault(); 比如跳转和表单提交
+  8. focus() 聚焦到
+  9. addEventListener(事件类型，函数) 动态添加事件
+  10. event.target; 获取事件源
+  11. parentNode 父节点
+
+- jquery部分
+
+  1. dom对象转成jQuery对象 ` $(dom)` ， jQuery对象转成dom对象 ` $(dom).get(0)` 通过get函数获取dom对象
+  2. $(selector).each(function(index, element));  对 jQuery 对象进行迭代，为每个匹配元素执行函数。其中index代表位置，element表示当前的元素。
+  3. $(selector).bind(event,data,function);  规定向被选元素添加的一个或多个事件处理程序 其中event代表事件，data代表参数，function代表执行的函数
+  4. unbind(event, function); 参数可选event表示具体事件，function表示要解绑的具体函数
+  5. hide 和 show 表示隐藏和显示
+  6. next(), prev() 上一个同辈元素和下一个同辈元素 prevAll() nextAll() 上边所有的同辈元素和下边所有的同辈元素
+  7. parent() 获得当前匹配元素集合中每个元素的父元素 parents() 获得当前匹配元素集合中每个元素的祖先元素children() 获得匹配元素集合中每个元素的所有子元素。
+  8. text() - 设置或返回所选元素的文本内容   html() - 设置或返回所选元素的内容（包括 HTML 标记）  val() - 设置或返回表单字段的值   attr() 方法也用于设置/改变属性值。
+  9. text(function(i,origText)   text()、html() 以及 val()  attr() 的回调函数, 参数的意义：第一个：被选元素列表中当前元素的下标，第二个是原始值。
+  10. prop 方法     prop() 方法设置或返回被选元素的属性和值  prop() 方法应该用于检索属性值，例如 DOM 属性（如 selectedIndex, tagName, nodeName, nodeType, ownerDocument, defaultChecked, 和 defaultSelected），如需检索 HTML 属性，请使用 attr() 方法代替。
+  11. find() 返回被选元素的后代元素
+  12. filter(criteria,function(index)))  返回符合一定条件的元素 可选两个参数  criteria：选择器表达式、jQuery 对象、一个或多个元素， function(index) ：要执行的函数，结果是true就表示被选择，index表示集合中的位置，需要注意的是：this表示当前的dom元素。
+
+- ajax部分
+
+  1. 基本语法：$.ajax(*{name:value, name:value, ... }*) 里边的键值对代表属性
+  2. 常用的属性有  url: 指定数据来源    type: 数据的请求类型    dataType: 返回的数据类型
+
+  3. 常用的回调函数 success(*result,status,xhr*) 成功时 第一个参数是返回的结果   error(*xhr,status,error*) 不成功时 beforeSend(*xhr*)  请求前   complete(*xhr,status*) 完成后 失败和成功都会调用 TODO：关于参数的具体使用以后研究
