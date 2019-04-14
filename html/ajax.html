@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-3.3.1.js" ></script>
+	</head>
+	<body>
+		<div class="list" id="list">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$.ajax({
+		type:"get",
+		url:"../json/data.json",
+		dataType: "json",
+		success: function(data, status, xhr) {
+			var ul = document.createElement("ul");
+			ul.setAttribute("id", "outer");
+			for(out of data) {
+				var li = document.createElement("li");
+				var text = document.createTextNode(out.name);
+				li.appendChild(text);
+				var in_ul = document.createElement('ul');
+				for(inn of out.parm) {
+					var in_li = document.createElement("li");
+					var in_text = document.createTextNode(inn.name);
+					console.log(inn.name);
+					in_li.appendChild(in_text);
+					in_ul.appendChild(in_li);
+				}
+				li.appendChild(in_ul);
+				ul.appendChild(li);
+			}
+			$(".list").append(ul);
+		},
+	});
+</script>
