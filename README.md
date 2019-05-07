@@ -1,4 +1,5 @@
 ### Web学习与复习
+---
 - html部分
   - 通用的几个属性
     1. title 设置元素的文本标题，在鼠标指向时会悬浮出标题
@@ -27,7 +28,6 @@
     7. 组合选择符 . . {}
     8. 分组选择器 1, 2 {}
     优先级：7>....1 8单独算
----
   - 文本
     1. 首行缩进 text-indent 可以应用于任何块级元素 取值：0、数值、百分比
 
@@ -54,7 +54,6 @@
     10. 字体大小 font-size 一般都是直接赋值的方式，常用12px、14px大小
 
     11. 设置字体粗细 font-weight 取值：normal、bold、bolder、lighter、数值，数值很少使用
----
   - 块级元素
     1. 清除浮动 clear 一般使用both
     2. 背景图片平铺模式 background-repeat 取值：no-repeat、repeat-x、repeat-y repeat
@@ -64,7 +63,6 @@
     6. 设置元素与其包含块的边距的距离 top、left、right、bottom
     7. 设置内容溢出的处理方式 overflow  取值：visible（默认让其溢出）、hidden（减掉）、scroll（滚动）、auto（自动）、inherit（与默认差不多）
     8. 设置元素的层叠顺序 z-index  取值：数值、auto  表示的是几个叠在一起时在上在下 负数表示下边
----
   - 表格
     1. 是否合并单元格边 border-collapse: collapse 和cellspacing="0"效果类似 就是说把框线合在一起
     2. 设置表格布局 table-layout: auto 默认auto会根据内容撑开 fixed表示固定
