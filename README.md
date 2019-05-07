@@ -1,5 +1,4 @@
 ### Web学习与复习
-
 - html部分
   - 通用的几个属性
     1. title 设置元素的文本标题，在鼠标指向时会悬浮出标题
@@ -16,6 +15,7 @@
       5. ol 有序列表 type可以选择列表类型
       6. dl dt dd 好像不是很常用的列表
       7. table里有thead tbody caption tfoot 浏览器会默认帮我们加上tbody，所以注意编码规范
+---
 - css部分
   - css选择符及优先级
     1. 全体选择符 * {}
@@ -27,7 +27,7 @@
     7. 组合选择符 . . {}
     8. 分组选择器 1, 2 {}
     优先级：7>....1 8单独算
-
+---
   - 文本
     1. 首行缩进 text-indent 可以应用于任何块级元素 取值：0、数值、百分比
 
@@ -54,7 +54,7 @@
     10. 字体大小 font-size 一般都是直接赋值的方式，常用12px、14px大小
 
     11. 设置字体粗细 font-weight 取值：normal、bold、bolder、lighter、数值，数值很少使用
-
+---
   - 块级元素
     1. 清除浮动 clear 一般使用both
     2. 背景图片平铺模式 background-repeat 取值：no-repeat、repeat-x、repeat-y repeat
@@ -64,17 +64,15 @@
     6. 设置元素与其包含块的边距的距离 top、left、right、bottom
     7. 设置内容溢出的处理方式 overflow  取值：visible（默认让其溢出）、hidden（减掉）、scroll（滚动）、auto（自动）、inherit（与默认差不多）
     8. 设置元素的层叠顺序 z-index  取值：数值、auto  表示的是几个叠在一起时在上在下 负数表示下边
-
+---
   - 表格
-
     1. 是否合并单元格边 border-collapse: collapse 和cellspacing="0"效果类似 就是说把框线合在一起
     2. 设置表格布局 table-layout: auto 默认auto会根据内容撑开 fixed表示固定
     3. 设置单元格和表格边的距离 border-spacing: 0px类似于cellpadding="" 后者是内容与单元格的距离
     4. 设置caption位置 caption-side: bottom 上和下
     5. 空行单元格是否显示边框 empty-cells: hide
-
+---
 - js 部分
-
   1. 全局变量和局部变量，不使用var的都是全局变量，其他的和java一样
   2. 定义数组， new Array();  和[];
   3. js dom操作 createAttribute()创建属性节点  createElement()创建元素节点  createTextNode()创建文本节点
@@ -86,9 +84,8 @@
   9. addEventListener(事件类型，函数) 动态添加事件
   10. event.target; 获取事件源
   11. parentNode 父节点
-
+---
 - jquery部分
-
   1. dom对象转成jQuery对象 ` $(dom)` ， jQuery对象转成dom对象 ` $(dom).get(0)` 通过get函数获取dom对象
   2. $(selector).each(function(index, element));  对 jQuery 对象进行迭代，为每个匹配元素执行函数。其中index代表位置，element表示当前的元素。
   3. $(selector).bind(event,data,function);  规定向被选元素添加的一个或多个事件处理程序 其中event代表事件，data代表参数，function代表执行的函数
@@ -101,9 +98,8 @@
   10. prop 方法     prop() 方法设置或返回被选元素的属性和值  prop() 方法应该用于检索属性值，例如 DOM 属性（如 selectedIndex, tagName, nodeName, nodeType, ownerDocument, defaultChecked, 和 defaultSelected），如需检索 HTML 属性，请使用 attr() 方法代替。
   11. find() 返回被选元素的后代元素
   12. filter(criteria,function(index)))  返回符合一定条件的元素 可选两个参数  criteria：选择器表达式、jQuery 对象、一个或多个元素， function(index) ：要执行的函数，结果是true就表示被选择，index表示集合中的位置，需要注意的是：this表示当前的dom元素。
-
+---
 - ajax部分
-
   1. 基本语法：$.ajax(*{name:value, name:value, ... }*) 里边的键值对代表属性
   2. 常用的属性有  url: 指定数据来源    type: 数据的请求类型    dataType: 返回的数据类型
 
